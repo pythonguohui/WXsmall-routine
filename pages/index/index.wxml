@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view>
+  <swiper autoplay="Ture" vertical="Ture" interval="3000" circular="Ture" >
+      <swiper-item>
+          <image src="/image/1.jpg" style="height:100%;width: 100%"></image>
+      </swiper-item>
+       <swiper-item>
+          <image src="/image/2.jpg" style="height:100%;width: 100%"></image>
+      </swiper-item>
+       <swiper-item>
+          <image src="/image/3.jpg" style="height:100%;width: 100%"></image>
+      </swiper-item>
+  </swiper>
+</view>
+<view class="body" wx:for="{{ acticle_list }}">
+  <view class="pic_body"> 
+    <image src="{{item.picture}}"></image>
+  </view>
+  <view class="text_body">
+    <navigator url="/pages/list/list?pages={{index}}" open-type="reLaunch" style="color: red;font-family: 楷体;font-weight:bolder">{{item.title}}</navigator>
+    <text>{{item.description}}</text>
+  </view>
+</view>
+

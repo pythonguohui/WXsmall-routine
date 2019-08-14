@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1c140d",
+    "navigationBarTitleText": "龙珠",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#EFFFE9",
+    "selectedColor": "#30A9DE",
+    "backgroundColor": "#090707",
+    "borderStyle": "white",
+    "selectedIconPath": "",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "image/5.png",
+        "selectedIconPath": "image/6.png"
+      },
+      {
+        "text": "列表页",
+        "pagePath": "pages/list/list",
+        "iconPath": "image/3.png",
+        "selectedIconPath": "image/4.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
